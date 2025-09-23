@@ -1,0 +1,168 @@
+/* Reset some default styles and set a background color */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+  padding-bottom: 60px; /* space for fixed footer */
+  box-sizing: border-box;
+  min-height: 100vh;
+  position: relative;
+  @include mat.theme((
+    color: (
+      theme-type: light,
+      primary: mat.$azure-palette,
+      tertiary: mat.$blue-palette,
+    ),
+    typography: Roboto,
+    density: 0,
+  ));
+}
+
+
+section {
+  padding: 30px;
+  margin: 20px 0 20px;
+  background-color: #fff;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+h2 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #555;
+}
+
+ul {
+  list-style: disc;
+  margin-left: 20px;
+  color: #333;
+}
+
+.contact-info,
+.social-media {
+  flex: 1 1 200px;
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: #004080;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #003060;
+}
+
+form label {
+  font-weight: bold;
+  margin-top: 10px;
+  display: block;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+
+form textarea {
+  resize: vertical;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0px;
+}
+
+section {
+    padding: 30px;
+    margin: 20px 0 20px; /* Adjust margin to avoid content being hidden under header */
+    background-color: #b2afaf49;
+
+}
+
+ul {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 0;
+    z-index: 1; /* Ensure it's above other content */
+}
+
+
+.main {
+  margin-top: 60px;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+button {
+  background-color: #004080;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #003060;
+}
+
+form label {
+  font-weight: bold;
+  margin-top: 10px;
+  display: block;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+
+.contact-info,
+.social-media {
+  flex: 1 1 200px;
+  margin-bottom: 10px;
+}
