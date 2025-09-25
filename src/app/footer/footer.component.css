@@ -9,6 +9,16 @@ footer {
   padding: 10px 0;
   z-index: 1000;
   box-shadow: 0 -2px 5px rgba(0,0,0,0.2);
+  user-select: none;
+}
+
+.footer-compact {
+  cursor: pointer;
+  padding: 5px 0;
+}
+
+.footer-full {
+  padding: 10px 0;
 }
 
 .footer-content {
@@ -34,4 +44,11 @@ footer a {
 
 footer a:hover {
   text-decoration: underline;
+}
+
+.social-media a img {
+  width: 24px;
+  height: 24px;
+  margin: 0 8px;
+  vertical-align: middle;
 }
