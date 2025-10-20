@@ -1,6 +1,6 @@
 {
   "/api": {
-    "target": "https://localhost:8787",
+    "target": "https://api.technoch.com",
     "changeOrigin": true, 
     "logLevel": "debug",
     "rejectUnauthorzied": true, 
