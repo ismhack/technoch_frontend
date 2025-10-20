@@ -73,7 +73,8 @@
           },
           "configurations": {
             "production": {
-              "buildTarget": "technoch-angular:build:production"
+              "buildTarget": "technoch-angular:build:production",
+               "proxyConfig": "src/proxy-prod.conf.json"
             }
           }
         },

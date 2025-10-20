@@ -16,7 +16,7 @@ export class ApiService {
 
   postContact(message:any){
 
-    return this.http.post(`https://api.technoch.com/api/contact`, message, 
+    return this.http.post(`api/contact`, message, 
       {headers:
         this.headers
       }
