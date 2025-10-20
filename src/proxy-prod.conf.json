@@ -6,6 +6,7 @@
     "rejectUnauthorzied": true, 
     "secure": false,            
     "strictSSL": true,          
-    "withCredentials": true    
+    "withCredentials": true,
+    "pathRewrite": { "^/api": "" }
   }
 }
