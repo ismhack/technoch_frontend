@@ -6,7 +6,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
   providedIn: 'root'
 })
 export class ApiService {
-  headers = new HttpHeaders({'Content-Type':'application/json; charset=utf-8'})
+  headers = new HttpHeaders({'Content-Type':'application/json; charset=utf-8', 'Origin': "'"+ window.location.origin + "'"})
 
  constructor(private http: HttpClient) {
   }
