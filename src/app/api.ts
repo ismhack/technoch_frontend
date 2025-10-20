@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { environment } from 'src/environments/environment';
 
 
 @Injectable({
@@ -16,7 +17,7 @@ export class ApiService {
 
   postContact(message:any){
 
-    return this.http.post(`api/contact`, message, 
+    return this.http.post(`${environment.apiUrl}/api/contact`, message, 
       {headers:
         this.headers
       }
