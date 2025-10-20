@@ -1,4 +1,4 @@
-import { enableProdMode } from '@angular/core';
+import { enableProdMode, CSP_NONCE } from '@angular/core';
 import { environment } from './environments/environment';
 import { bootstrapApplication } from '@angular/platform-browser';
 import { provideHttpClient } from '@angular/common/http';
@@ -9,5 +9,8 @@ if (environment.production) {
 }
 
 bootstrapApplication(AppComponent, {
-  providers: [provideHttpClient()],
+  providers: [provideHttpClient(),
+     {provide: CSP_NONCE,
+    useValue: (globalThis as any).nonceValue}
+  ],
 }).catch(err => console.error(err));

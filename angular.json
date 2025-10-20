@@ -58,7 +58,11 @@
                   "maximumWarning": "2kb",
                   "maximumError": "4kb"
                 }
-              ]
+              ],
+              "security":{
+                 "autoCsp": true
+              }
+
             }
           }
         },

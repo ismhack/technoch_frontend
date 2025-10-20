@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
 import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { ApiService } from '../api';
@@ -17,8 +16,7 @@ export class ContactFormComponent {
   errorMessage = '';
 
   constructor(private fb: FormBuilder,
-     private http: HttpClient
-    , private apiService: ApiService) {
+    private apiService: ApiService) {
     this.contactForm = this.fb.group({
       name: ['', Validators.required],
       email: ['', [Validators.required, Validators.email]],
