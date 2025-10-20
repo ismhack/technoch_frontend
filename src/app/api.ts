@@ -6,7 +6,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
   providedIn: 'root'
 })
 export class ApiService {
-  headers = new HttpHeaders({'Content-Type':'application/json; charset=utf-8', 'access-control-request-method': 'GET', 'Origin': "'"+ window.location.origin + "'"})
+  headers = new HttpHeaders({'Content-Type':'application/json; charset=utf-8'})
 
  constructor(private http: HttpClient) {
   }
@@ -16,7 +16,7 @@ export class ApiService {
 
   postContact(message:any){
 
-    return this.http.post(`/api/contact`, message, 
+    return this.http.post(`https://api.technoch.com/api/contact`, message, 
       {headers:
         this.headers
       }
